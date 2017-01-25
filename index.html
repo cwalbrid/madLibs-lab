@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="madLibsApp">
+<head>
+	<title>Fantastic Libs and Where to Find Them</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|New+Rocker|Bilbo|Bilbo+Swash+Caps" rel="stylesheet">
+</head>
+<body>
+
+	<div class="heading">
+		<p class="heading-title">Fantastic Libs</p>
+		<p class="heading-byline">and Where to Find Them</p>
+	</div>	
+
+	<nav>
+		<a href="#/form">Form</a>
+		<span> | </span>
+		<a href="#/libs">Libs</a>
+	</nav>
+	<div ng-view=""></div>
+
+
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-route.min.js"></script>
+<script src="app.js"></script>
+<!-- <script src="factory.js"></script> -->
+</body>
+</html>

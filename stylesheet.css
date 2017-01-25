@@ -1,0 +1,47 @@
+body{
+	background-color: #19191C;
+}
+
+input {
+	display: block;
+}
+
+.heading{
+	height: 240px;
+	width: 550px;
+	border: solid 2px white;	
+	margin: 20px auto 0;
+	position: relative;
+}
+
+.heading-title{
+	height: 87px;
+	width: 500px;
+	margin: 0;
+	border: solid 1px white;
+
+	font-family: 'Cinzel Decorative';
+	font-size: 87px;
+	color: #DAD7D3;
+	
+
+}
+
+.heading-byline{
+	position: absolute;
+	left: 200px;
+	bottom: ;
+	height: ;
+	width: 255px;
+	border: solid 1px white;
+
+	font-family: 'Cinzel';
+	font-size: 35px;
+	color: #CDB182;
+	
+
+}
+
+
+
+
