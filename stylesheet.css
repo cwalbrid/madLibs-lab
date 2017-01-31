@@ -16,6 +16,8 @@ body{
 	background-repeat: no-repeat;
 }
 
+
+
 .heading{
 	height: 200px;
 	width: 482px;
@@ -81,7 +83,8 @@ nav a:hover{
 	color: #CDB182;
 }
 
-#form-container{
+/* form */
+.container{
 	position: absolute;
 	background-color: #f1e9d2;
 	/*float: right;*/	
@@ -91,7 +94,7 @@ nav a:hover{
 	height: 600px;
 	border-radius: 10px;
 	margin: 0px 0px 0px 0px;
-	padding-left: 30px;
+	/*padding-left: 30px;*/
 
 	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
@@ -99,8 +102,7 @@ nav a:hover{
 
 }
 
-#form-container:before, #form-container:after
-{
+.container:before, .container:after{
 	position: absolute;
 	width: 40%;
 	height: 30px;
@@ -120,8 +122,7 @@ nav a:hover{
 	z-index: -1;
 } 
 
-#form-container:after
-{
+.container:after{
 	left: auto;
 	right: 12px;
 	-webkit-transform: skew(5deg) rotate(5deg);
@@ -134,12 +135,117 @@ nav a:hover{
 .form-title{
 	font-family: 'Bilbo Swash Caps';
 	color: #413826;
+	font-size:30px;
+	margin: 25px;
+	display: inline-block;
+
 }
-/* form */
 
-input {
-	display: block;
+.form-date{
+	font-family: 'Bilbo Swash Caps';
+	display: inline;
+	color: #413826;
+	font-size:24px;
+	display: inline-block;
+	margin: 0px 0px 0px 110px;
 }
 
-/* libs */
+.input-wrapper{
+	margin: 40px 16px;
+	text-align:center;
+}
 
+input[type=text]{
+	width:185px;
+	height:50px;
+	margin: 0px 35px 18px 0px;
+	padding: 3px;
+	box-sizing: border-box;
+	
+	outline: none;
+	border: none;
+	border-bottom: solid 1px #413826;
+	
+	background-color: transparent;
+	transition: 0.5s;
+
+	font-family: 'Bilbo';
+	font-size: 20px;
+	color:#413826;
+}
+
+/*input[placeholder]{
+	font-family: 'Bilbo';
+	font-size 20px;
+}*/
+
+::-webkit-input-placeholder { color: #333333; opacity: 1 !important; }
+:-moz-placeholder { color: #333333;}
+::-moz-placeholder {color: #333333;}
+:-ms-input-placeholder {color: #333333;}
+
+
+input[type=text]:focus{
+ background-color:#bdad8f;
+ border: none;
+ border-radius: 4px 4px 4px 4px;
+}
+
+
+
+#form-button{
+	/*margin: 16px 16px;*/
+	font-family: 'Cinzel';
+	font-size: 16px;
+	color: #f1e9d2;
+	background-color: #413826;
+	border: solid 1px #413826;
+	border-radius: 4px;
+	outline: none;
+	position: absolute;
+	bottom: 90px;
+	left: 140px;
+	transition: .1s;
+}
+
+#form-button:hover{
+	cursor: pointer;
+}
+
+#form-button:active{
+	background-color: #f1e9d2;
+	color: #413826;
+}
+
+
+
+.libs-title{
+	font-family: 'Bilbo Swash Caps';
+	color: #413826;
+	font-size: 30px;
+	display: inline-block;
+	margin: 25px;
+}
+
+.libs-date{
+	font-family: 'Bilbo Swash Caps';
+	display: inline;
+	color: #413826;
+	font-size:24px;
+	display: inline-block;
+	margin: 0px 0px 0px 110px;
+
+}
+
+.libs-copy{
+	font-family: 'Bilbo Swash Caps';
+	color: #413826;
+	font-size:24px;
+	margin: 0px 45px;
+}
+
+.lib{
+	background-color: #bdad8f;
+	padding: 0 5px;
+	border-radius: 2px;
+}
